@@ -1,4 +1,85 @@
 header {
-	background-image: url(../images/earth_lights.jpg);
-	height: 500px;
+	background: url(../images/earth_lights.jpg) no-repeat center center;
+	position: relative;
+	background-attachment: fixed;
+}
+
+article {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+
+	.head-container {
+		width: 90%;
+		max-width: 1020px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+
+		.card {
+			width: 100%;
+			
+			.card-inner {
+				min-height: 300px;
+				line-height: 300px;
+				background-color: rgba(255, 255, 255, 0.1);
+				border: 1px solid #aaa;
+				border-radius: 10px;
+				margin: 0 0 40px;
+				text-align: center;
+
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.3);
+					-o-transition: all .9s;
+				    -moz-transition: all .9s;
+				    -webkit-transition: all .9s;
+				    -ms-transition: all .9s;
+				}
+
+				.card-contents {
+					display: inline-block;
+					vertical-align: middle;
+					line-height: normal;
+				}
+			}
+
+			@media only screen and (min-width: 768px) {
+				width: 50%;
+				float: left;
+
+				.card-inner {
+					margin: 0 20px 40px;
+
+					&.omega { margin-left: 0px; }
+					&.alpha { margin-right: 0px; }
+				}
+			}
+
+		}
+	}
+}
+
+footer {
+
+	.upper-footer {
+		padding: 60px 0;
+		/* fallback */
+	    background-color: #1CA4FF;
+	    /* Safari 4-5, Chrome 1-9 */
+	    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1CA4FF), to(#000));
+	    /* Safari 5.1, Chrome 10+ */
+	    background: -webkit-linear-gradient(top, #000, #1CA4FF);
+	    /* Firefox 3.6+ */
+	    background: -moz-linear-gradient(top, #000, #1CA4FF);
+	    /* IE 10 */
+	    background: -ms-linear-gradient(top, #000, #1CA4FF);
+	    /* Opera 11.10+ */
+	    background: -o-linear-gradient(top, #000, #1CA4FF);
+	}
+
+	.lower-footer {
+		padding: 40px 0;
+		background-color: #124773;
+	}
+
 }

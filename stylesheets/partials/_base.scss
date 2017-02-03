@@ -7,6 +7,11 @@ html {
     line-height: 1.4;
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 html,
 body,
 div,
@@ -55,7 +60,7 @@ figcaption {
 }
 
 /**** tables ****/
-table{
+table {
     border-collapse:collapse;
     border-spacing:0;
 }
