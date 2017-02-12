@@ -18,22 +18,32 @@ article {
 
 		.card {
 			width: 100%;
+			color: #fff;
+			font-family: 'Play', sans-serif;
+			text-shadow: 0 0 20px #fff;
+
+			a {
+				color: #fff;
+				display: block;
+				text-decoration: none;
+				padding: 30px;
+			}
 			
 			.card-inner {
 				min-height: 300px;
 				line-height: 300px;
-				background-color: rgba(255, 255, 255, 0.1);
+				background-color: rgba(0, 0, 0, 0.5);
 				border: 1px solid #aaa;
 				border-radius: 10px;
 				margin: 0 0 40px;
 				text-align: center;
 
 				&:hover {
-					background-color: rgba(255, 255, 255, 0.3);
-					-o-transition: all .9s;
-				    -moz-transition: all .9s;
-				    -webkit-transition: all .9s;
-				    -ms-transition: all .9s;
+					background-color: rgba(0, 0, 0, 0.8);
+					-o-transition: all .7s;
+				    -moz-transition: all .7s;
+				    -webkit-transition: all .7s;
+				    -ms-transition: all .7s;
 				}
 
 				.card-contents {
@@ -61,25 +71,8 @@ article {
 
 footer {
 
-	.upper-footer {
-		padding: 60px 0;
-		/* fallback */
-	    background-color: #1CA4FF;
-	    /* Safari 4-5, Chrome 1-9 */
-	    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1CA4FF), to(#000));
-	    /* Safari 5.1, Chrome 10+ */
-	    background: -webkit-linear-gradient(top, #000, #1CA4FF);
-	    /* Firefox 3.6+ */
-	    background: -moz-linear-gradient(top, #000, #1CA4FF);
-	    /* IE 10 */
-	    background: -ms-linear-gradient(top, #000, #1CA4FF);
-	    /* Opera 11.10+ */
-	    background: -o-linear-gradient(top, #000, #1CA4FF);
-	}
-
-	.lower-footer {
-		padding: 40px 0;
-		background-color: #124773;
-	}
+	color: #ddd;
+	padding: 80px 0;
+	background-color: #1A1A21;
 
 }
