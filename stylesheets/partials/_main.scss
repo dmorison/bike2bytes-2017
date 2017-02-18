@@ -1,49 +1,86 @@
+.number {
+	font-family: 'Black Ops One', cursive;
+	font-size: 1.8em;
+	display: block;
+}
+
+.challenge {
+	margin: 0 auto;
+
+	span:first-child {
+		position: relative;
+		top: -8px;
+		margin-right: 10px;
+	}
+
+	.number {
+		display: inline-block;
+	}
+}
+
 header {
 	background: url(../images/earth_lights.jpg) no-repeat center center;
 	position: relative;
 	background-attachment: fixed;
+	width: 100%;
+
+	.head-container {
+		width: 100%;
+		text-align: center;
+		padding: 250px 0;
+	}
+
+	h1 {
+		font-family: 'Play', sans-serif;
+		font-size: 5em;
+		color: #fff;
+		text-shadow: 0 0 20px #fff;
+	}
 }
 
 article {
 	width: 100%;
-	position: absolute;
-	top: 10%;
+	background-color: #ADDDED;
+	position: relative;
 
-	.head-container {
+	.content-container {
 		width: 90%;
 		max-width: 1020px;
-		left: 0;
-		right: 0;
+		position: relative;
+		top: -80px;
+		/* left: 0;
+		right: 0; */
 		margin: 0 auto;
 
 		.card {
 			width: 100%;
 			color: #fff;
-			font-family: 'Play', sans-serif;
-			text-shadow: 0 0 20px #fff;
+			font-size: 1.5em;
 
-			a {
-				color: #fff;
-				display: block;
-				text-decoration: none;
-				padding: 30px;
-			}
-			
 			.card-inner {
 				min-height: 300px;
 				line-height: 300px;
-				background-color: rgba(0, 0, 0, 0.5);
-				border: 1px solid #aaa;
+				background-color: #45D649;
+				border: 8px solid #fff;
 				border-radius: 10px;
+				/* padding: 5px; */
 				margin: 0 0 40px;
 				text-align: center;
 
-				&:hover {
-					background-color: rgba(0, 0, 0, 0.8);
-					-o-transition: all .7s;
-				    -moz-transition: all .7s;
-				    -webkit-transition: all .7s;
-				    -ms-transition: all .7s;
+				> a {
+					color: #fff;
+					display: block;
+					text-decoration: none;
+
+					&:hover {
+						color: #F6FF00;
+						text-shadow: 0 0 20px #F6FF00;
+						background-color: #00BF05;
+						-o-transition: all .5s;
+					    -moz-transition: all .5s;
+					    -webkit-transition: all .5s;
+					    -ms-transition: all .5s;
+					}
 				}
 
 				.card-contents {
@@ -57,11 +94,14 @@ article {
 				width: 50%;
 				float: left;
 
+				&.size-60 { width: 60%; }
+				&.size-40 { width: 40%; }
+
 				.card-inner {
 					margin: 0 20px 40px;
 
-					&.omega { margin-left: 0px; }
-					&.alpha { margin-right: 0px; }
+					&.alpha { margin-left: 0px; }
+					&.omega { margin-right: 0px; }
 				}
 			}
 
@@ -70,9 +110,8 @@ article {
 }
 
 footer {
-
 	color: #ddd;
 	padding: 80px 0;
 	background-color: #1A1A21;
-
+	/* background-color: #363838; */
 }
