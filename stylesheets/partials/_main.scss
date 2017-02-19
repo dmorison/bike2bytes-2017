@@ -4,6 +4,10 @@
 	display: block;
 }
 
+.small-text {
+	font-size: 16px;
+}
+
 .challenge {
 	margin: 0 auto;
 
@@ -18,6 +22,10 @@
 	}
 }
 
+ul {
+	list-style-type: none;
+}
+
 header {
 	background: url(../images/earth_lights.jpg) no-repeat center center;
 	position: relative;
@@ -27,14 +35,30 @@ header {
 	.head-container {
 		width: 100%;
 		text-align: center;
-		padding: 250px 0;
+		padding: 188px 0;
 	}
 
 	h1 {
 		font-family: 'Play', sans-serif;
-		font-size: 5em;
+		font-size: 3.2em;
 		color: #fff;
 		text-shadow: 0 0 20px #fff;
+	}
+
+	@media only screen and (min-width: 360px) {
+		h1 {
+			font-size: 3.6em;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.head-container {
+			padding: 250px 0;
+		}
+
+		h1 {
+			font-size: 5em;
+		}
 	}
 }
 
@@ -42,6 +66,7 @@ article {
 	width: 100%;
 	background-color: #ADDDED;
 	position: relative;
+	border-top: 8px solid #fff;
 
 	.content-container {
 		width: 90%;
@@ -51,6 +76,7 @@ article {
 		/* left: 0;
 		right: 0; */
 		margin: 0 auto;
+		z-index: 99;
 
 		.card {
 			width: 100%;
@@ -87,6 +113,8 @@ article {
 					display: inline-block;
 					vertical-align: middle;
 					line-height: normal;
+
+					img { margin-top: 5px; }
 				}
 			}
 
@@ -110,8 +138,81 @@ article {
 }
 
 footer {
+	position: relative;
 	color: #ddd;
-	padding: 80px 0;
+	padding: 80px 16px;
 	background-color: #1A1A21;
 	/* background-color: #363838; */
+
+	ul {
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+
+		li {
+			float: left;
+			
+			&.additions {
+				padding-right: 24px;
+				margin-right: 24px;
+				border-right: 1px solid #aaa;
+			}
+
+			img {
+				width: 35px;
+			}
+		}
+	}
+
+	.footer-title {
+		display: block;
+		margin-top: 14px;
+		font-family: 'Play', sans-serif;
+		font-size: 2.2em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	> img {
+		position: absolute;
+		top: -172px;
+		right: -80px;
+	}
+
+	@media only screen and (min-width: 360px) {
+		ul {
+			width: 348px;
+
+			li {
+				img {
+					width: 50px;
+				}
+			}
+		}
+
+		.footer-title {
+			font-size: 3em;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		padding: 80px 40px;
+
+		ul {
+			width: 388px;
+			float: left;
+			margin: 0;
+
+			li {
+				img {
+					width: 60px;
+				}
+			}
+		}
+
+		.footer-title {
+			float: right;
+			margin-top: 0;
+		}
+	}
 }
