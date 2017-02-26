@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Website of David Morison">
+  	<meta name="author" content="David Morison">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bike2:bytes - David Morison</title>
+
+  	<link rel="author" href="https://plus.google.com/+DaveMorison" />
+	<link rel="icon" type="image/png" href="../images/favicon.ico" />
+
+	<meta property="og:title" content="Bike2:bytes - David Morison Front-end Web Development" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.bike2bytes.com/" />
+	<meta property="og:description" content="Official website for David Morison, front-end web developer, London, UK" />
+	<meta property="og:image" content="http://www.bike2bytes.com/images/bikebytesogimage.jpg" />
+
+  	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css' />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-47887378-1']);
+	  _gaq.push(['_setDomainName', 'bike2bytes.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+<body ng-app="bikeBytesApp">
+	<!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+    	<div class="head-container">
+    		<a href="../index.html"><h1>Bike 2:bytes</h1></a>
+    	</div>
+    </header>
+
+    <article ng-controller="bikeBytes">
+    	<div class="content-container">
+    		<iframe class="weekly-planner" src="https://dmorison.shinyapps.io/2017-02-25_week-time-planner_ggplot/"></iframe>
+    	</div>
+
+    	<footer class="clearfix">
+	    	<ul class="clearfix">
+	    		<li class="additions"><a href="http://www.linkedin.com/pub/david-morison/65/539/540" target="_blank"><img src="../images/linkedin-icon.png" title="Linkedin" alt="Linkedin"></a></li>
+	    		<li class="additions"><a href="https://github.com/dmorison" target="_blank"><img src="../images/github-icon.png" title="Github" alt="Github"></a></li>
+	    		<li class="additions"><a href="https://www.facebook.com/dmorison1" target="_blank"><img src="../images/facebook-icon.png" title="Facebook" alt="Facebook"></a></li>
+	    		<li><a href="https://www.instagram.com/djmorison/" target="_blank"><img src="../images/instagram-icon.png" title="Instagram" alt="Instagram"></a></li>
+	    	</ul>
+	    	<a href="../index.html"><span class="footer-title">Bike 2:bytes</span></a>
+	    	<!-- <img src="images/Bike-Sign.png" width="400" height="400"> -->
+	    </footer>
+    </article>
+
+
+    <script src="../scripts/libs/angular.min.js"></script>
+	<script src="../scripts/scripts.js"></script>
+</body>
+</html>

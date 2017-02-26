@@ -122,6 +122,13 @@ article {
 				width: 50%;
 				float: left;
 
+				&.float-right { float: right; }
+				&.center-align {
+					float: none;
+					clear: both;
+					margin: 0 auto;
+				}
+
 				&.size-60 { width: 60%; }
 				&.size-40 { width: 40%; }
 
@@ -144,6 +151,18 @@ footer {
 	background-color: #1A1A21;
 	/* background-color: #363838; */
 
+	a {
+		color: #fff;
+
+		&:hover {
+			color: #aaa;
+			-o-transition: all .5s;
+		    -moz-transition: all .5s;
+		    -webkit-transition: all .5s;
+		    -ms-transition: all .5s;
+		}
+	}
+
 	ul {
 		width: 100%;
 		padding: 0;
@@ -156,6 +175,14 @@ footer {
 				padding-right: 24px;
 				margin-right: 24px;
 				border-right: 1px solid #aaa;
+			}
+
+			a:hover {
+				opacity: 0.5;
+				-o-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -webkit-transition: all .5s;
+			    -ms-transition: all .5s;
 			}
 
 			img {
