@@ -41,8 +41,9 @@ function buildBody()
 {
 
 	$returnHtml = <<<EOD
-<div class="content-container clearfix">
-	<iframe class="weekly-planner" src="https://dmorison.shinyapps.io/2017-03-23_crime-app/"></iframe>
+<div class="content-container shiny-map clearfix">
+	<p class="mobile-warning-message">This is best viewed on a desktop.</p>
+	<iframe class="london-crime-mapping" src="https://dmorison.shinyapps.io/2017-03-23_crime-app/"></iframe>
 </div>
 EOD;
 

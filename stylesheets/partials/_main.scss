@@ -26,6 +26,12 @@ ul {
 	list-style-type: none;
 }
 
+@media only screen and (min-width: 870px) {
+	.mobile-warning-message {
+		display: none;
+	}
+}
+
 header {
 	background: url(../images/earth_lights.jpg) no-repeat center center;
 	position: relative;
@@ -109,6 +115,10 @@ article {
 		right: 0; */
 		margin: 0 auto;
 		z-index: 99;
+
+		&.shiny-map {
+			max-width: 1120px;
+		}
 
 		.card {
 			width: 100%;
