@@ -32,6 +32,11 @@ header {
 	background-attachment: fixed;
 	width: 100%;
 
+	&.shiny {
+		background: url(../images/moz-screenshot-170.jpg) no-repeat center center;
+		background-attachment: fixed;
+	}
+
 	.head-container {
 		width: 100%;
 		text-align: center;
@@ -62,11 +67,38 @@ header {
 	}
 }
 
+header.small {
+	background: #1A1A21;
+	width: 100%;
+	
+	.head-container {
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	h1 {
+		font-family: 'Play', sans-serif;
+		font-size: 3.2em;
+		color: #fff;
+	}
+}
+
 article {
 	width: 100%;
 	background-color: #ADDDED;
 	position: relative;
 	border-top: 8px solid #fff;
+
+	&.simple-page {
+		border-top: 0px;
+
+		.content-container {
+			top: 0px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
 
 	.content-container {
 		width: 90%;
