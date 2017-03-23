@@ -1,6 +1,4 @@
 <?php
-error_reporting(-1);
-ini_set('error_reporting', E_ALL);
 
 include_once "classes/classMeta.php";
 include_once "classes/classFooter.php";
