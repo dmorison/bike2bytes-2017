@@ -18,9 +18,15 @@ app.factory('dataFeed', ['$http', function($http) {
 		return $http.get('https://spreadsheets.google.com/feeds/list/1a4LB1LTsIxV5vGZDo2-mIHak6bnTbeiR6AQE1VQx0-M/od6/public/basic?hl=en_US&alt=json');
 	};
 
+	function getReadings() {
+		// return $http.get('https://docs.google.com/spreadsheets/d/18ztt6VtZrHBtUXzSVWOxZ_nqRntDJuHKv1lNF_W8ePw/pubhtml?gid=0&single=true');
+		return $http.get('https://spreadsheets.google.com/feeds/list/18ztt6VtZrHBtUXzSVWOxZ_nqRntDJuHKv1lNF_W8ePw/od6/public/basic?hl=en_US&alt=json');
+	};
+
 	return {
-		getFeed: getFeed()
-	}
+		getFeed: getFeed(),
+		getReadings: getReadings()
+	};
 }]);
 
 app.controller('bikeBytes', ['$scope', '$http', 'dataFeed', function($scope, $http, dataFeed) {
@@ -47,6 +53,30 @@ app.controller('bikeBytes', ['$scope', '$http', 'dataFeed', function($scope, $ht
 			// 	items.push(item[1]);
 			// }
 			// console.log('my array: ' + items);
+		},
+		function error(response) {
+			console.log(response);
+		}
+	);
+
+	dataFeed.getReadings.then(
+		function success(response) {
+			var count = response.data.feed.entry.length;
+			$scope.readingsCount = count;
+			var latest = [];
+			for (var i = (count - 3); i < count; i++) {
+				var reading = response.data.feed.entry[i].content.$t.split(', ');
+				var readingTitle = reading[2].split(': ');
+				readingTitle = readingTitle[1];
+				var readingLink = reading[3].split(': ');
+				readingLink = readingLink[1];
+				var readObj = {
+					title: readingTitle,
+					link: readingLink
+				}
+				latest.unshift(readObj);
+			}
+			$scope.readings = latest;
 		},
 		function error(response) {
 			console.log(response);

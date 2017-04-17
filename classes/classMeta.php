@@ -22,11 +22,11 @@ class classMeta
   	<link rel="author" href="https://plus.google.com/+DaveMorison" />
 	<link rel="icon" type="image/png" href="images/favicon.ico" />
 
-	<meta property="og:title" content="Bike2:bytes - David Morison Front-end Web Development" />
+	<meta property="og:title" content="Bike2:bytes - David Morison" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="http://www.bike2bytes.com/" />
-	<meta property="og:description" content="Official website for David Morison, front-end web developer, London, UK" />
-	<meta property="og:image" content="http://www.bike2bytes.com/images/bikebytesogimage.jpg" />
+	<meta property="og:description" content="Website for David Morison, London, UK" />
+	<meta property="og:image" content="http://www.bike2bytes.com/images/og-image.jpg" />
 
   	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">

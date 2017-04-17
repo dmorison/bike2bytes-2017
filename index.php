@@ -48,7 +48,7 @@ function buildBody()
 				<div class="card-contents">
 					<h3>Wine cellar</h3>
 					<img src="images/drink.png">
-					<p>Browse my personal wine website</p>
+					<p>Visit my personal wine website</p>
 				</div>
 			</a>
 		</div>
@@ -59,10 +59,24 @@ function buildBody()
 	            <div class="card-contents">
 	                <h3>Shiny apps built in R</h3>
 	                <img src="images/bar-chart.png">
+	                <p>Exploring data with interactive visualizations</p>
 	            </div>
 	        </a>
 	    </div>
 	</div>
+	<div class="card size-100">
+        <div class="card-inner alpha omega">
+            <div class="card-contents">
+                <h3>What I've been reading</h3>
+                <div class="challenge">
+                	<span>Readings count of 2017:</span><span class="number">{{ readingsCount }}</span>
+                </div>
+                <ul class="card-list">
+                    <li ng-repeat="item in readings"><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 	<div class="card size-60">
 		<div class="card-inner alpha">
 			<div class="card-contents">

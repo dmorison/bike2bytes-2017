@@ -13,7 +13,7 @@
 
 	span:first-child {
 		position: relative;
-		top: -8px;
+		top: -6px;
 		margin-right: 10px;
 	}
 
@@ -131,7 +131,7 @@ article {
 				background-color: #45D649;
 				border: 8px solid #fff;
 				border-radius: 10px;
-				/* padding: 5px; */
+				padding: 8px;
 				margin: 0 0 40px;
 				text-align: center;
 
@@ -157,12 +157,31 @@ article {
 					line-height: normal;
 
 					img { margin-top: 5px; }
+
+					.card-list {
+						list-style-type: disc;
+						text-align: left;
+						margin: 0px;
+
+						li {
+							a {
+								color: #fff;
+								&:hover {
+									text-decoration: underline;
+								}
+							}
+						}
+					}
 				}
 			}
 
 			@media only screen and (min-width: 768px) {
 				width: 50%;
 				float: left;
+
+				.card-inner {
+					padding: 0px;
+				}
 
 				&.float-right { float: right; }
 				&.center-align {
@@ -171,6 +190,7 @@ article {
 					margin: 0 auto;
 				}
 
+				&.size-100 { width: 100%; }
 				&.size-60 { width: 60%; }
 				&.size-40 { width: 40%; }
 
