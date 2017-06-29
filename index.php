@@ -28,6 +28,8 @@ function buildHeader()
 <header>
 	<div class="head-container">
 		<a href="#"><h1>Bike 2:bytes</h1></a>
+		<p>Interested in data, technology and the energy industry</p>
+		<p>MSc in Atmospheric Science | Contributing writer in <a href="https://medium.com/towards-data-science" target="_blank">Towards Data Science</a> Medium publication</p>
 	</div>
 </header>
 <article ng-controller="bikeBytes">
@@ -44,18 +46,17 @@ function buildBody()
 <div class="content-container clearfix">
 	<div class="card">
 		<div class="card-inner alpha">
-			<a href="/wineBook" target="_blank">
+			<a href="https://medium.com/towards-data-science/exploratory-data-analysis-into-the-relationship-between-different-types-of-crime-in-london-20c328e193ff" target="_blank">
 				<div class="card-contents">
-					<h3>Wine cellar</h3>
-					<img src="images/drink.png">
-					<p>Visit my personal wine website</p>
+					<h3>Latest Medium blog post:</h3>
+					<p>Exploratory data analysis into the relationship between different types of crime in London</p>
 				</div>
 			</a>
 		</div>
 	</div>
 	<div class="card">
 	    <div class="card-inner omega">
-	        <a href="shinyapps.php">
+	        <a href="shinyapp-london-crime-mapping.php">
 	            <div class="card-contents">
 	                <h3>Shiny apps built in R</h3>
 	                <img src="images/bar-chart.png">
@@ -79,13 +80,13 @@ function buildBody()
     </div>
 	<div class="card size-60">
 		<div class="card-inner alpha">
-			<div class="card-contents">
-				<h3>2017 challenge:</h3>
-				<p>20 push-ups per day, 6 days a week</p>
-				<div class="challenge">
-					<span>Count:</span><span class="number">{{ pushups }}</span>
+			<a href="/wineBook" target="_blank">
+				<div class="card-contents">
+					<h3>Wine cellar</h3>
+					<img src="images/drink.png">
+					<p>Visit my personal wine website</p>
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 	<div class="card size-40">
@@ -96,8 +97,8 @@ function buildBody()
 			</div>
 		</div>
 	</div>
-	<div class="card size-60 center-align">
-		<div class="card-inner">
+	<div class="card size-40">
+		<div class="card-inner alpha">
 			<a href="http://www.parkrun.org.uk/richmond/results/athletehistory/?athleteNumber=995354" target="_blank">
 				<div class="card-contents">
 					<h3>Fastest 5km park run:</h3>
@@ -105,6 +106,17 @@ function buildBody()
 					<p>Richmond Park<br><span class="small-text">(visit results page)</span></p>
 				</div>
 			</a>
+		</div>
+	</div>
+	<div class="card size-60">
+		<div class="card-inner omega">
+			<div class="card-contents">
+				<h3>2017 challenge:</h3>
+				<p>20 push-ups per day, 6 days a week</p>
+				<div class="challenge">
+					<span>Count:</span><span class="number">{{ pushups }}</span>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
