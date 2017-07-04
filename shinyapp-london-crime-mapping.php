@@ -25,7 +25,7 @@ function buildHeader()
 {
 
 	$returnHtml = <<<EOD
-<header class="small">
+<header class="small-header">
 	<div class="head-container">
 		<a href="index.php"><h1>Bike 2:bytes</h1></a>
 	</div>

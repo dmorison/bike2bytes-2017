@@ -80,6 +80,16 @@ function buildBody()
     </div>
 	<div class="card size-60">
 		<div class="card-inner alpha">
+			<a href="/Tour-de-France-Game.php">
+				<div class="card-contents">
+					<h3>Tour de France Game 2017</h3>
+					<p>3 days before the start of the 2017 Tour I decided to quickly develop a game that a handful of friends and family could play.</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="card size-40">
+		<div class="card-inner omega">
 			<a href="/wineBook" target="_blank">
 				<div class="card-contents">
 					<h3>Wine cellar</h3>
@@ -90,15 +100,15 @@ function buildBody()
 		</div>
 	</div>
 	<div class="card size-40">
-		<div class="card-inner omega">
+		<div class="card-inner alpha">
 			<div class="card-contents">
 				<h3>Current book I'm reading:</h3>
 				<p>{{ book }}</p>
 			</div>
 		</div>
 	</div>
-	<div class="card size-40">
-		<div class="card-inner alpha">
+	<div class="card size-60">
+		<div class="card-inner omega">
 			<a href="http://www.parkrun.org.uk/richmond/results/athletehistory/?athleteNumber=995354" target="_blank">
 				<div class="card-contents">
 					<h3>Fastest 5km park run:</h3>
@@ -108,7 +118,7 @@ function buildBody()
 			</a>
 		</div>
 	</div>
-	<div class="card size-60">
+	<div class="card center-align size-60">
 		<div class="card-inner omega">
 			<div class="card-contents">
 				<h3>2017 challenge:</h3>
