@@ -1,3 +1,10 @@
+header {
+    &.shiny {
+        background: url(../images/moz-screenshot-170.jpg) no-repeat center center;
+        background-attachment: fixed;
+    }
+}
+
 iframe {
     width: 100%;
     border: none;

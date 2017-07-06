@@ -1,9 +1,38 @@
 <?php
-error_reporting(-1);
-ini_set('error_reporting', E_ALL);
+/*error_reporting(-1);
+ini_set('error_reporting', E_ALL);*/
 
 class classMeta
 {
+
+	var $setPage;
+	var $pageDescription;
+	var $pageTitle;
+	var $pageUrl;
+	var $ogImage = "http://www.bike2bytes.com/images/og-image.jpg";
+
+	function __construct($page = "homePage")
+	{
+		$this->setPage = $page;
+		$this->setMeta();
+	}
+
+	public function setMeta()
+	{
+		switch ($this->setPage) {
+			case "tdfGameHome":
+				$this->pageDescription = "Bike2:bytes Tour de France Game 2017 by David Morison";
+				$this->pageTitle = "Tour de France Game 2017";
+				$this->pageUrl = "http://www.bike2bytes.com/Tour-de-France-Game.php";
+				break;
+			case "homePage":
+			default:
+				$this->pageDescription = "Website of David Morison, London, UK";
+				$this->pageTitle = "Bike2:bytes - David Morison";
+				$this->pageUrl = "http://www.bike2bytes.com/";
+				break;
+		}
+	}
 
 	public function buildMeta()
 	{
@@ -13,20 +42,20 @@ class classMeta
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Website of David Morison">
+	<meta name="description" content="{$this->pageDescription}">
   	<meta name="author" content="David Morison">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Bike2:bytes - David Morison</title>
+	<title>{$this->pageTitle}</title>
 
   	<link rel="author" href="https://plus.google.com/+DaveMorison" />
 	<link rel="icon" type="image/png" href="images/favicon.ico" />
 
-	<meta property="og:title" content="Bike2:bytes - David Morison" />
+	<meta property="og:title" content="{$this->pageTitle}" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://www.bike2bytes.com/" />
-	<meta property="og:description" content="Website for David Morison, London, UK" />
-	<meta property="og:image" content="http://www.bike2bytes.com/images/og-image.jpg" />
+	<meta property="og:url" content="{$this->pageUrl}" />
+	<meta property="og:description" content="{$this->pageDescription}" />
+	<meta property="og:image" content="{$this->ogImage}" />
 
   	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">

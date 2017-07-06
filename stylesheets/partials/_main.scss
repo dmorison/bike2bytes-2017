@@ -38,11 +38,6 @@ header {
 	background-attachment: fixed;
 	width: 100%;
 
-	&.shiny {
-		background: url(../images/moz-screenshot-170.jpg) no-repeat center center;
-		background-attachment: fixed;
-	}
-
 	.head-container {
 		width: 100%;
 		text-align: center;
@@ -85,20 +80,23 @@ header {
 	}
 }
 
-header.small-header {
-	background: #1A1A21;
-	width: 100%;
-	
-	.head-container {
+header {
+	&.small-header {
+		background: #1A1A21;
 		width: 100%;
-		text-align: center;
-		padding: 10px;
-	}
+		
+		.head-container {
+			width: 100%;
+			text-align: center;
+			padding: 10px;
+		}
 
-	h1 {
-		font-family: 'Play', sans-serif;
-		font-size: 3.2em;
-		color: #fff;
+		h1 {
+			font-family: 'Play', sans-serif;
+			font-size: 3.2em;
+			color: #fff;
+		}
+
 	}
 }
 
@@ -153,7 +151,6 @@ article {
 					text-decoration: none;
 
 					&:hover {
-						color: #F6FF00;
 						text-shadow: 0 0 20px #F6FF00;
 						background-color: #00BF05;
 						-o-transition: all .5s;

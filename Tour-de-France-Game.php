@@ -7,7 +7,10 @@ echo buildContent();
 
 function buildContent()
 {
-	$meta = new classMeta();
+
+	$page = "tdfGameHome";
+
+	$meta = new classMeta($page);
 	$footer = new classFooter();
 
 	$html = '';
@@ -43,10 +46,10 @@ function buildBody()
 {
 
 	$returnHtml = <<<EOD
-<div class="content-container clearfix">
+<div class="content-container tdf-game-contents clearfix">
 	<div class="card size-100">
         <div class="card-inner alpha omega">
-            <div class="card-contents tdf-game-contents">
+            <div class="card-contents">
                 <h3>How it works</h3>
                 <h5>How to pick your team</h5>
                 <ol>
@@ -68,22 +71,22 @@ function buildBody()
                 	</tr>
                 	<tr>
                 		<td>2</td>
-                		<td>For each day one of your riders is in the yellow jersey</td>
+                		<td>For each day one of your riders claims the yellow jersey</td>
                 	</tr>
                 	<tr>
                 		<td>1</td>
-                		<td>For each day one of your riders is in another jersey: Green, Polka Dot, White</td>
+                		<td>For each day one of your riders claims another jersey: Green, Polka Dot, White</td>
                 	</tr>
                 	<tr>
                 		<td>1</td>
-                		<td>For each day one of your riders is wearing the red number for being the most agressive rider from the previous day</td>
+                		<td>For each day one of your riders is awarded the red number for being the most agressive rider</td>
                 	</tr>
                 	<tr>
                 		<td>1</td>
                 		<td>If any rider from your chosen team win the stage</td>
                 	</tr>
                 </table>
-                <p>Overall points awarded at the end of the race:</p>
+                <p>Overall points awarded at the end of the race (these are awarded in addition to the final stage points as above):</p>
                 <table>
                 	<tr>
                 		<th>Points</th>
@@ -123,7 +126,7 @@ function buildBody()
                 	</tr>
                 </table>
                 <p><em>Disclaimer:</em></p>
-                <p><em>I thought of this at the last minute this week and developed it in about a days woth in total so there might be as pretty as hoped for and there may be a few bugs, if so please let me know. And I can't guarantee that it will even work as I obviously haven't been able to test it. But it might also work and be fun and then I will try and make it bigger and better next year.</em></p>
+                <p><em>I thought of this at the last minute in the week leading up to the start of the Tour and developed it in about a day so it might be as pretty as hoped for and there may be a few bugs, if so please let me know. I also can't guarantee that it will even work as I obviously haven't been able to test it. But if it does work it could be a lot of fun and then I will try to make it bigger and better next year.</em></p>
             </div>
         </div>
     </div>
